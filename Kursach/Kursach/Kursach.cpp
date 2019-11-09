@@ -8,16 +8,23 @@ using namespace std;
 
 class Angles {
 public:
-	int Deg, Min;
+	float Deg, Min;
 private:
 	const float pi =float (M_PI) ;
-	int Rad;
+	float Rad;
 	Angles * pointer1;
 	Angles * pointer2;
 public:
+	Angles() {} 
+
+	Angles(float Deg_, float Min_) {
+		Deg = Deg_;
+		Min = Min_;
+	}
+
 	Angles operator+(Angles ParAdd) {
-		int DegNewAdd = Deg + ParAdd.Deg;
-		int MinNewAdd = Min + ParAdd.Min;
+		float DegNewAdd = Deg + ParAdd.Deg;
+		float MinNewAdd = Min + ParAdd.Min;
 		ParAdd.Deg = DegNewAdd;
 		ParAdd.Min = MinNewAdd;
 		cout << "Degrees = " << DegNewAdd << "° Minutes = " << MinNewAdd << "'";
@@ -25,8 +32,8 @@ public:
 	}
 
 	Angles operator-(Angles ParSubtr) {
-		int DegNewSubtr = Deg - ParSubtr.Deg;
-		int MinNewSubtr = Min - ParSubtr.Min;
+		float DegNewSubtr = Deg - ParSubtr.Deg;
+		float MinNewSubtr = Min - ParSubtr.Min;
 		ParSubtr.Deg = DegNewSubtr;
 		ParSubtr.Min = MinNewSubtr;
 		cout << "Degrees = " << DegNewSubtr << "° Minutes = " << MinNewSubtr << "'";
@@ -44,8 +51,8 @@ public:
 		{
 			ParConv.Min -= 60;
 		}
-		int DegNewConv = ParConv.Deg;
-		int MinNewConv = ParConv.Min;
+		float DegNewConv = ParConv.Deg;
+		float MinNewConv = ParConv.Min;
 		cout << "Degrees = " << DegNewConv << "° Minutes = " << MinNewConv << "'";
 		return ParConv;
 	}
@@ -60,7 +67,9 @@ public:
 };
 
 void main() {
-	Angles J;
-	Angles K;
-
+	Angles J(4454,5655);
+	Angles K(5,7);
+	J.operator<(J);
+	Angles Q;
+	J.operator+(K);
 }

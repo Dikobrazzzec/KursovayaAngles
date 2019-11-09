@@ -1,4 +1,3 @@
 ﻿  Kursach.cpp
-D:\GitProject\C++\Kursach\Kursach\Kursach.cpp(47,36): warning C4244: =: преобразование "float" в "int", возможна потеря данных
-D:\GitProject\C++\Kursach\Kursach\Kursach.cpp(52,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
-  Kursach.vcxproj -> D:\GitProject\C++\Kursach\Debug\Kursach.exe
+D:\GitProject\C++\KursachC++3sem\Kursach\Kursach\Kursach.cpp(69,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  Kursach.vcxproj -> D:\GitProject\C++\KursachC++3sem\Kursach\Debug\Kursach.exe
